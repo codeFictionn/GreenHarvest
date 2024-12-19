@@ -70,7 +70,6 @@ p{
 .third-section-bottom{
     display: flex; /* Flexbox aktif edilir */
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px; /* Elemanlar arası boşluk */
 }
 
@@ -95,6 +94,9 @@ p{
     display: flex; /* Flexbox aktif edilir */
     flex-direction: column; /* Dikey düzen */
     gap: 12px; 
+}
+.vegetables-name{
+    color: #7A3145;
 }
 
 .vegetables-image {
