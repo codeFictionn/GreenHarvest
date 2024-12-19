@@ -68,11 +68,11 @@ header {
 }
 
 #navbar-right-button {
-    width: 157px;
+    width: 200px;
     border-radius: 30px;
     padding: 16px 32px 16px 32px;
     gap: 10px;
-    color: #7a3145;
+    background-color: #7a3145;
 }
 
 
@@ -149,3 +149,306 @@ header {
     line-height: 20px;
     color: #fbfbfb;
 } */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+}
+
+h2 {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.75px;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: -0.75px;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* BEYZA */
+#second-section {
+    width: 100%;
+    height: auto;
+    padding: 80px 20px;
+}
+
+.second-section-up {
+    width: 100%;
+    height: auto;
+    background-color: #576f35;
+    border-radius: 12px;
+    color: #fbfbfb;
+}
+
+.second-section-bottom {
+    width: 100%;
+    height: auto;
+    color: #141414;
+}
+
+/* BEYZA */
+
+#third-section {
+    background-color: #7a3145;
+    display: flex;
+    /* Flexbox aktif edilir */
+    flex-direction: column;
+    /* Dikey düzen */
+    gap: 40px;
+    /* Elemanlar arası boşluk */
+    padding: 80px 20px;
+}
+
+.third-section-top {
+    display: flex;
+    /* Flexbox aktif edilir */
+    flex-direction: column;
+    /* Dikey düzen */
+    gap: 20px;
+    /* Elemanlar arası boşluk */
+    max-width: 626px;
+}
+
+.third-section-title {
+    color: white;
+    max-width: 335px;
+}
+
+.third-section-text {
+    color: white;
+}
+
+.third-section-bottom {
+    display: flex;
+    /* Flexbox aktif edilir */
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Elemanlar arası boşluk */
+}
+
+.vegetables-name {
+    color: #7a3145;
+}
+
+.vegetables-cards {
+    width: 335px;
+    height: 376px;
+    padding: 32px 24px;
+    display: flex;
+    /* Flexbox aktif edilir */
+    flex-direction: column;
+    /* Dikey düzen */
+    gap: 10px;
+    /* Elemanlar arası boşluk */
+    border-radius: 40px;
+    background-color: #fbfbfb;
+}
+
+.vegetables-card {
+    display: flex;
+    /* Flexbox aktif edilir */
+    flex-direction: column;
+    /* Dikey düzen */
+    gap: 12px;
+}
+
+.vegetables-texts {
+    display: flex;
+    /* Flexbox aktif edilir */
+    flex-direction: column;
+    /* Dikey düzen */
+    gap: 12px;
+}
+
+.vegetables-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* BEYZA */
+#fourth-section {
+    width: 100%;
+    min-height: 664px;
+    background-color: #fbfbfb;
+    padding: 80px 20px;
+}
+
+.fourth-section-title {
+    width: 335px;
+    height: 236px;
+    margin-bottom: 40px;
+}
+
+#fourth-section h2 {
+    color: #141414;
+    margin-bottom: 20px;
+}
+
+#fourth-section h2 span {
+    color: #576f35;
+}
+
+.customers-cards {
+    width: 100%;
+    height: 248px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.customer-card {
+    min-width: 335px;
+    height: 100%;
+    border: 1px solid #d4bfc4;
+    border-radius: 24px;
+    padding: 20px 16px;
+    background-color: #fbfbfb;
+    text-align: center;
+}
+
+.customer-card img {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.customer-name {
+    font-weight: 600;
+    font-size: 18px;
+    color: #141414;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.customer-review {
+    white-space: normal;
+    width: 288px;
+    height: 80px;
+    color: #858585;
+}
+
+/* BEYZA */
+
+@media (min-width: 768px) {
+    #second-section {
+        padding: 100px 32px;
+    }
+
+    #second-section h2 {
+        font-size: 64px;
+        line-height: 64px;
+        display: inline;
+    }
+
+    #third-section {
+        padding: 100px 32px;
+        gap: 52px;
+    }
+
+    h2 {
+        font-size: 64px;
+        line-height: 64px;
+    }
+
+    body {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .third-section-top {
+        gap: 24px;
+    }
+
+    .third-section-bottom {
+        row-gap: 28px;
+        column-gap: 24px;
+    }
+
+    .vegetables-cards {
+        width: 340px;
+        height: 380px;
+        padding: 32px 30px;
+        gap: 12px;
+    }
+
+    .third-section-title {
+        width: 508px;
+        height: 128px;
+    }
+
+    #fourth-section {
+        padding: 100px 32px;
+    }
+
+    .fourth-section-title {
+        width: 553px;
+        height: 192px;
+    }
+
+    .customer-card {
+        width: 340px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #second-section {
+        padding: 100px;
+    }
+
+    #second-section h2 {
+        font-size: 76px;
+        line-height: 76px;
+    }
+
+    #third-section {
+        padding: 100px;
+    }
+
+    #fourth-section {
+        padding: 100px;
+    }
+
+    .customer-card {
+        width: 100%;
+    }
+
+    .customer-review {
+        width: 100%;
+    }
+}
