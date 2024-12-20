@@ -47,82 +47,6 @@ p {
   margin: 0;
 }
 
-#third-section {
-  background-color: #7A3145;
-  display: flex;
-  /* Flexbox aktif edilir */
-  flex-direction: column;
-  /* Dikey düzen */
-  gap: 40px;
-  /* Elemanlar arası boşluk */
-  padding: 80px 20px;
-
-}
-
-.third-section-top {
-  display: flex;
-  /* Flexbox aktif edilir */
-  flex-direction: column;
-  /* Dikey düzen */
-  gap: 20px;
-  /* Elemanlar arası boşluk */
-  max-width: 626px;
-}
-
-.third-section-title {
-  color: white;
-  max-width: 335px;
-}
-
-.third-section-text {
-  color: white;
-}
-
-.third-section-bottom {
-  display: flex;
-  /* Flexbox aktif edilir */
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  /* Elemanlar arası boşluk */
-}
-
-.vegetables-cards {
-  width: 335px;
-  height: 376px;
-  padding: 32px 24px;
-  display: flex;
-  /* Flexbox aktif edilir */
-  flex-direction: column;
-  /* Dikey düzen */
-  gap: 10px;
-  /* Elemanlar arası boşluk */
-  border-radius: 40px;
-  background-color: #FBFBFB;
-}
-
-.vegetables-card {
-  display: flex;
-  /* Flexbox aktif edilir */
-  flex-direction: column;
-  /* Dikey düzen */
-  gap: 12px;
-}
-
-.vegetables-texts {
-  display: flex;
-  /* Flexbox aktif edilir */
-  flex-direction: column;
-  /* Dikey düzen */
-  gap: 12px;
-}
-
-.vegetables-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 
 /* fifth-section by yesimbozkurt */
 .fifth-section {
@@ -138,10 +62,8 @@ p {
 .fifth-section-title {
   display: flex;
   width: 100%;
-  /* align-items: center; */
   flex-direction: column;
   text-align: left;
-
 }
 
 .fifth-section-title h2 {
@@ -165,7 +87,6 @@ p {
 }
 
 .fifth-section-div {
-  /* margin-top: 40px; */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -183,7 +104,6 @@ p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
   margin: 0 auto;
-
 }
 
 .fifth-section-form-container h2 {
@@ -191,15 +111,10 @@ p {
   line-height: 28px;
   font-weight: bold;
   text-align: center;
-  /* margin-top: 40px; */
   margin-bottom: 40px;
   color: #141414;
   text-transform: uppercase;
-
   font-weight: 600;
-  /* width: 295px;
-  height: 130px; */
-
 }
 
 .fifth-section-form-container .from-us {
@@ -214,7 +129,6 @@ p {
 
   display: flex;
   flex-direction: column;
-  /* gap: 16px; */
   width: 295px;
   margin: 20px auto;
 }
@@ -228,22 +142,19 @@ p {
   outline: none;
 }
 
-/* стилізація плейсхолдера */
 .inp::placeholder {
   color: black;
 }
 
-/* стилізація інпута в стані фокус */
 .inp:focus {
   border-color: brown;
 }
 
-/* стилізація інпута при не валідному значенні */
+
 .inp:not(:placeholder-shown):invalid {
   border-color: red;
 }
 
-/* стилізація інпута при валідному значенні */
 .inp:not(:placeholder-shown):valid {
   border-color: green;
 }
@@ -264,12 +175,10 @@ p {
   color: red;
 }
 
-/* стилізація інформаційного текста при валідному значенні в інпуті */
 .inp:not(:placeholder-shown):valid~.text-valid {
   display: block;
 }
 
-/* стилізація інформаційного текста при не валідному значенні в інпуті */
 .inp:not(:placeholder-shown):invalid~.text-invalid {
   display: block;
 }
@@ -283,8 +192,6 @@ p {
   border: 1px solid gray;
   border-radius: 30px;
   cursor: pointer;
-
-
 }
 
 .button-send:is(:hover, :focus) {
@@ -304,13 +211,6 @@ p {
   height: 48px;
 }
 
-/* .fifth-section-form-container .form-box {
-  width: 440px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
 
 .fifth-section-form-container .form-box textarea {
   height: 92px;
@@ -335,8 +235,6 @@ p {
   line-height: 20px;
   text-align: center;
   color: #FBFBFB;
-
-
 }
 
 .fifth-section-form-container .form-box button:hover {
@@ -354,20 +252,14 @@ p {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-
-
 }
 
 .fifth-section-img-container img {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   border-radius: 15px;
   width: 295px;
   object-fit: cover;
   height: 272px;
   opacity: 0px;
-  /* margin: 40px 20px; */
   margin-bottom: 0;
   max-width: 100%;
 }
@@ -411,10 +303,6 @@ p {
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 1279px) {
-  #third-section {
-    padding: 100px 32px;
-    gap: 52px;
-  }
 
   h2 {
     font-size: 64px;
@@ -426,28 +314,6 @@ p {
     line-height: 20px;
   }
 
-  .third-section-top {
-    gap: 24px;
-  }
-
-  .third-section-bottom {
-    row-gap: 28px;
-    column-gap: 24px;
-  }
-
-  .vegetables-cards {
-    width: 340px;
-    height: 380px;
-    padding: 32px 30px;
-    gap: 12px;
-  }
-
-  .third-section-title {
-    width: 508px;
-    height: 128px;
-  }
-
-  /* fifth-section by yesim */
   .fifth-section {
     width: 100%;
 
@@ -490,7 +356,6 @@ p {
     height: 632px;
     gap: 10px;
     border-radius: 30px;
-    /* padding: 72px 100px; */
   }
 
   .fifth-section-form-container .form-box {
@@ -503,21 +368,16 @@ p {
 
   .fifth-section-form-container h2 {
     font-size: 32px;
-
     font-weight: 600;
     width: 440px;
-    /* height: 78px; */
     margin: 0 auto;
     margin-bottom: 52px;
 
   }
 
-
   .fifth-section-img-container {
     width: 640px;
     height: 528px;
-    /* padding: 52px 0px 0px 0px; */
-    /* gap: 52px; */
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -540,9 +400,7 @@ p {
 
 /* desktop */
 @media (min-width: 1280px) {
-  #third-section {
-    padding: 100px;
-  }
+
 
   /* fifth-section by yesim */
   #fifth-section {
