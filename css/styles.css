@@ -42,6 +42,152 @@ p {
   margin: 0;
 }
 
+/* Feyza */
+#first-section {
+  display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1208px;
+}
+
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.first-section-image {
+  display: flex;
+  background-color: rgba(122, 49, 69, 1);
+  width: Hug(375px) px;
+  height: Hug(532px) px;
+  padding: 40px 20px;
+  gap: 10px;
+  position: relative;
+  justify-content: center;
+}
+
+.woman-img{
+    width: 100%;
+      
+      display: block;
+}
+
+.how-it-work {
+  width: 100%;
+  height: 676px;
+  background-color: #576f35;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.how-it-top {
+  width: 100%;
+  height: 192px;
+  flex-direction: column;
+}
+
+.how-it-top h3{
+
+width: 100%;
+  height: auto;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.how-it-top span {
+  color: rgba(212, 191, 196, 1);
+}
+
+.how-it-top p {
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FBFBFB;
+}
+
+
+
+.how-it-bottom {
+  width: 100%;
+  height: auto;
+  gap: 20px;
+}
+
+.how-it-bottom ol {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.how-it-bottom li {
+  width: 100%;
+  height: 84px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 12px 24px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.span1 {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7a3145;
+  border: 5px solid #d4bfc4;
+  border-radius: 50%;
+  color: #fbfbfb;
+}
+
+.how-it-bottom .span2 {
+  font-weight: bold;
+  color: #141414;
+}
+
+.how-it-bottom p {
+  width: 180px;
+  height: 60px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: 'Inter Tight', sans-serif;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: #858585;
+  justify-content: center;
+  align-items: center;
+}
+/*Feyza/
+
+
+
+
+
+
 /* BEYZA */
 #second-section {
   width: 100%;
@@ -181,6 +327,10 @@ p {
 }
 /* BEYZA */
 
+
+
+
+
 @media (min-width: 768px) {
   #second-section {
     padding: 100px 32px;
@@ -199,6 +349,7 @@ p {
     line-height: 64px;
   }
 
+  
   body {
     font-size: 16px;
     line-height: 20px;
@@ -232,6 +383,86 @@ p {
   .customer-card {
     width: 340px;
   }
+
+  /*Feyza*/
+  #first-section{
+    height: 1548px;
+  }
+  .first-section-image {
+    padding: 100px 64px;
+  }
+
+  .woman-img{
+    width: 640px;
+      height: 640px;
+     
+  }
+
+  .how-it-work {
+    width: 100%;
+    height: auto;
+      padding: 100px 164px;
+      gap: 52px;
+  }
+
+  .how-it-top h3{
+      width: 440px;
+        height: auto;
+        font-size: 32px;
+      line-height: 32px;
+        
+  }
+
+  .how-it-top p{
+      width: 100%;
+        height: auto;
+        font-size: 16px;
+  }
+ 
+.how-it-bottom{
+  width: 440px;
+    height: auto;
+}
+
+.how-it-bottom p{
+  width: 325px;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.how-it-bottom ol{
+  width: 100%;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.how-it-bottom li{
+  width: 100%;
+    height: 84px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 12px 24px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.span1{
+width: 52px;
+height: 52px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #7a3145;
+border: 5px solid #d4bfc4;
+border-radius: 50%;
+color:#FBFBFB;
+}
+
 }
 
 @media (min-width: 1280px) {
@@ -254,4 +485,32 @@ p {
   .customer-review {
     width: 100%;
   }
+
+
+  /*Feyza*/
+  #first-section {
+    width: 100%;
+      height: 760px;
+    /* display: flex; */
+      flex-direction: row;
+  }
+
+  .first-section-image{
+    width: 50%;
+    height: 100%;
+    padding: 100px;
+  }
+
+.how-it-work{
+      width: 50%;
+        height: 100%;
+        padding: 100px;
+        gap: 104px;
 }
+}
+
+
+
+
+
+
