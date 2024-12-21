@@ -26,7 +26,9 @@ body {
 /* Genel Footer Stil Ayarları */
 .footer {
   padding: 40px 0;
-  background-color: var(--chianti);
+  background-color: #7A3145;
+  color: #fbfbfb;
+  text-decoration: none;
 }
 
 .footer-wrapper {
@@ -39,7 +41,7 @@ body {
 }
 
 .footer-logo {
-  fill: var(--white);
+  fill: #fbfbfb;
 }
 
 .footer-desc {
@@ -123,11 +125,12 @@ body {
 
 .footer-anchor-link {
   transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
 }
 
 .footer-anchor-link:hover,
 .footer-anchor-link:focus {
-  color: var(--blush);
+  color: #d4bfc4;
 }
 
 .footer-address {
@@ -138,11 +141,12 @@ body {
   display: inline-block;
   margin-bottom: 14px;
   transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
 }
 
 .ft-link:hover,
 .ft-link:focus {
-  color: var(--blush);
+  color: #d4bfc4;
 }
 
 @media only screen and (min-width: 768px) {
@@ -155,6 +159,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
