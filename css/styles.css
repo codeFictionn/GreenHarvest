@@ -24,138 +24,148 @@ body {
 }
 
 /* Genel Footer Stil Ayarları */
-footer {
-  background-color: #7A3145;
-  color: #fff;
-  padding: 20px 0;
-  font-size: 14px;
+.footer {
+  padding: 40px 0;
+  background-color: var(--chianti);
 }
 
-.footer-content {
+.footer-wrapper {
   display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px;
+  flex-direction: column;
 }
 
-.footer-section {
-  text-align: left;
+.footer-main {
+  margin-bottom: 40px;
 }
 
-.footer-section p {
-  margin: 5px 0;
-  width: 265px;
-  /* Set the width of the box */
-  height: 60px;
-  /* Set the height of the box */
-  overflow: hidden;
-  /* Ensure content does not overflow the box */
-  display: -webkit-box;
-  /* Use for multi-line truncation */
-  -webkit-line-clamp: 3;
-  /* Limit to 3 lines */
-  -webkit-box-orient: vertical;
-  /* Required for webkit-line-clamp */
-  text-overflow: ellipsis;
-  /* Add ellipsis for overflow text */
-  padding-left: 100px;
-  /* Add 100px left padding */
+.footer-logo {
+  fill: var(--white);
 }
 
-.footer-section ul {
-  list-style: none;
-  padding: 0;
+.footer-desc {
+  max-width: 330px;
+  max-height: 60px;
+  margin-top: 14px;
 }
 
-.footer-section ul li {
-  margin-bottom: 10px;
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 32px 0;
+  }
+
+  .footer-desc {
+    max-width: 265px;
+    margin-top: 24px;
+  }
+
+  .footer-logo {
+    width: 217px;
+    height: 20px;
+  }
 }
 
-.footer-section ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  text-transform: uppercase;
-  /* Links are displayed in uppercase */
+@media only screen and (min-width: 1280px) {
+  .footer {
+    padding: 52px 0;
+  }
 }
 
-.footer-section ul li a:hover {
-  text-decoration: underline;
+.footer-contacts {
+  margin-bottom: 80px;
 }
 
-.footer-bottom {
+@media only screen and (min-width: 768px) {
+  .footer-contacts {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .sec-foot-cont {
+    display: flex;
+    flex-direction: row;
+    gap: 121px;
+  }
+
+  .footer-contacts {
+    margin-bottom: 124px;
+  }
+}
+
+.footer-list {
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-list {
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-list {
+    margin-bottom: 0;
+  }
+}
+
+.header-third.header-third-menu:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-third.header-third-menu:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.footer-anchor-link {
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-anchor-link:hover,
+.footer-anchor-link:focus {
+  color: var(--blush);
+}
+
+.footer-address {
+  font-style: normal;
+}
+
+.ft-link {
+  display: inline-block;
+  margin-bottom: 14px;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ft-link:hover,
+.ft-link:focus {
+  color: var(--blush);
+}
+
+@media only screen and (min-width: 768px) {
+  .ft-link {
+    margin-bottom: 24px;
+  }
+}
+
+.policy-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  font-size: 14px;
-  padding: 42px 100px 0;
-  /* Adjusted for spacing */
+  flex-direction: column;
+  gap: 14px;
 }
 
-.footer-bottom-left {
-  text-align: left;
-  color: #D4BFC4;
-  width: 565px;
-}
-
-.footer-bottom-right {
-  text-align: right;
-  color: #D4BFC4;
-  width: 565px;
-}
-
-.footer-bottom a {
-  color: #D4BFC4;
-  text-decoration: none;
-}
-
-.footer-bottom a:hover {
-  text-decoration: underline;
-}
-
-/* Media Queries */
-
-/* Tablet (768px and up) */
-@media (min-width: 768px) {
-  .footer-content {
-    justify-content: space-evenly;
-  }
-
-  .footer-section p {
-    padding-left: 0;
-    /* Reset padding for this breakpoint */
-    text-align: left;
-    margin-left: 50px;
-  }
-
-  .footer-section ul {
-    margin-left: 50px;
-  }
-
-  .footer-bottom {
-    padding: 20px 50px 0;
+@media only screen and (min-width: 768px) {
+  .policy-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
-/* Desktop (1280px and up) */
-@media (min-width: 1280px) {
-  footer {
-    font-size: 16px;
-  }
-
-  .footer-content {
-    gap: 40px;
-  }
-
-  .footer-section {
-    margin-right: 50px;
-  }
-
-  .footer-bottom {
-    padding: 42px 100px 0;
-    /* Restore spacing */
-  }
+.policy-links {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 }
