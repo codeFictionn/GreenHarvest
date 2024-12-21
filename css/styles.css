@@ -50,7 +50,17 @@ body {
   margin-top: 14px;
 }
 
+.footer-anchor-link {
+  color: #fbfbfb;
+  text-decoration: none;
+}
 
+.footer-list .header-third-menu a {
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
 
 @media only screen and (min-width: 768px) {
   .footer {
@@ -127,6 +137,17 @@ body {
 
 .footer-anchor-link {
   transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.ft-link {
+  color: #fbfbfb;
+  text-decoration: none;
+}
+
+
+.color-blush {
+  color: #D4BFC4;
   text-decoration: none;
 }
 
