@@ -42,6 +42,229 @@ p {
   margin: 0;
 }
 
+header {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 32px;
+  width: 90%;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Sol ve sağ hizalama için */
+}
+
+#nav-logo-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; /* Dikeyde ortalama */
+  gap: 4px;
+}
+
+.nav-logo-left-img {
+  height: 12px;
+  width: 148px;
+}
+
+.menu-svg {
+  height: 16px;
+  width: 16px;
+}
+
+.tree-menu-svg {
+  width: 21.33px;
+  height: 16px;
+}
+
+.nav-logo-right {
+  display: flex;
+  align-items: center;
+}
+
+#navbar-right {
+  display: none;
+  flex-direction: row;
+  gap: 20px;
+  width: 498px;
+  height: 52px;
+  margin-right: 100px;
+}
+
+#navbar-right-list-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  list-style-type: none;
+}
+
+#navbar-right-list-li {
+  width: 118px;
+  height: 44px;
+  border: 1px solid #fbfbfb;
+  border-radius: 12px;
+  gap: 10px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #fbfbfb;
+  background: none;
+}
+
+#navbar-right-button {
+  display: flex;
+  border-radius: 30px;
+  padding: 16px 32px 16px 32px;
+  gap: 10px;
+  background-color: #7a3145;
+}
+
+#navbar-right-button button {
+  all: unset; /* Tüm varsayılan tarayıcı stillerini sıfırlar */
+  color: #fbfbfb; /* Yazı rengi */
+  font-family: 'Inter Tight', sans-serif; /* Yazı tipi */
+  font-size: 18px; /* Yazı boyutu */
+  font-weight: 600; /* Yazı kalınlığı */
+  line-height: 20px;
+  cursor: pointer; /* Fare imlecini pointer yapar */
+  text-align: center;
+  width: 100px;
+}
+
+#navbar-right-button:active {
+  background-color: #fbfbfb;
+  color: #7a3145;
+}
+
+.overlay-container {
+  position: fixed;
+  display: none;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  min-height: 812px;
+  background-color: #576f35;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.exit-button {
+  border: none;
+  top: 0; /* Üst kısmına yerleştirir */
+  right: 20px;
+  margin-top: 20px;
+  width: 32px;
+  height: 32px;
+  background-color: #576f35;
+}
+.exit-svg {
+  position: absolute; /* Öğeleri aynı konumda üst üste yerleştirir */
+  top: 0; /* Üst kısmına yerleştirir */
+  right: 20px;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.overlay-menu-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 234px;
+  margin-left: 114px;
+  margin-right: 114px;
+  gap: 24px;
+}
+
+.overlay-menu-li {
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid #fbfbfb;
+  padding: 12px;
+  gap: 10px;
+
+  background-color: #576f35;
+  color: #fbfbfb;
+}
+
+.overlay-menu-li:active {
+  background-color: #fbfbfb;
+  color: #7a3145;
+}
+.shop-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 232px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.overlay-button-under {
+  display: flex;
+  justify-content: center;
+  border: none;
+  background-color: #7a3145;
+  color: #fbfbfb;
+  border-radius: 30px;
+  gap: 10px;
+  padding: 16px 41px;
+}
+
+.overlay-button-under:active {
+  background-color: #fbfbfb;
+  color: #7a3145;
+}
+
+#hero-section {
+  display: flex; /* Flexbox aktif edilir */
+  flex-direction: column;
+  padding-top: 100px;
+  gap: 40px;
+  background-color: #576f35;
+}
+
+.hero-section-text p {
+  color: #fbfbfb;
+}
+.hero-section-text h1 {
+  color: #fbfbfb;
+  text-transform: uppercase;
+}
+
+.hero-section-text {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex; /* Flexbox aktif edilir */
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-section-img {
+  width: 100%;
+  height: 372px;
+  background-image: url(/images/hero_section/heroimage@3x.png);
+  background-size: cover; /* Resmi kapsayıcı alana göre ölçeklendirir */
+  background-position: center; /* Resmi dikey ve yatay ortalar */
+  background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+}
+
 /* BEYZA */
 #second-section {
   width: 100%;
