@@ -20,22 +20,129 @@
     />
   </head>
   <body>
-    <header id="header">
-      <p>fkvmfjvnfjvnsjfşnvgjf</p>
-      <!-- meryem -->
-    </header>
+    <div class="overlay-container">
+        <div class="overlay">
+          <button class="exit-button" type="button">
+            <a href="" class="exit-svg"><svg class="social-svg" width="16" height="16"><use href="./images/icons.svg#icon-Vector-10"></use></svg></a>
+            <a href="" class="exit-svg"><svg class="social-svg" width="16" height="16"><use href="./images/icons.svg#icon-Vector-8"></use></svg></a>
+          </button>
+  
+          
+          <ul class="overlay-menu-ul">
+            <li class="overlay-menu-li">
+              How It Works
+            </li>
+            <li class="overlay-menu-li">Vegetables</li>
+            <li class="overlay-menu-li" >Reviews</li>
+          </ul>
+        
+          <div class="shop-now">
+          <button class="overlay-button-under" type="button">SHOP NOW</button>
+        </div>
+        </div>
+      </div>
+  
+      <header id="header">
+        <div id="navbar">
+          
+              <div id="nav-logo-left">
+                <svg class="menu-svg"><use href="./images/icons.svg#icon-Vector-6"></use></svg>
+                <img class="nav-logo-left-img" src="/images/header/text.png" alt="" >
+              </div>
+              <div class="nav-logo-right">
+                <a href="" class="header-left-svg"><svg class="tree-menu-svg" ><use href="./images/icons.svg#icon-Vector-7"></use></svg></a>
+              </div>
+            
+          
+          <div id="navbar-right">
+            <div id="navbar-right-list">
+              <ul id="navbar-right-list-ul">
+                <li id="navbar-right-list-li">How It Work</li>
+                <li id="navbar-right-list-li">Vegetables</li>
+                <li id="navbar-right-list-li">Reviews</li>
+              </ul>
+            </div>
+            <div id="navbar-right-button">
+              <button>SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+        
+      </header>
 
     <main>
-      <section id="first-section">
-        <!-- feyza -->
-      </section>
+        <section id="hero-section">
+            <div class="hero-section-text">
+              <h1>organic vegetables to your diet today!</h1>
+              <p>Our expertly curated vegetable baskets are made with the freshest, highest quality vegetables available. Fresh Harvest Box has got you covered. Fresh, high-quality vegetables in expertly curated vegetable baskets delivered to you.</p>
+            </div>
+            <div class="hero-section-img">
+              
+            </div>
+          </section>
+      
+          <section id="first-section">
+            <!-- feyza -->
+              <div class="first-section-image">
+                <picture >
+                  <source srcset="images/first_section/desktop.png" media="(min-width: 1024px)">
+                  <source srcset="images/first_section/tablet.png" media="(min-width: 768px)">
+                  <img class="woman-img" src="images/first_section/mobil.png" alt="first section">
+              </picture>
+            </div>
+    
+                
+              </div>
+        
+              <div class="how-it-work">
+                <div class="how-it-top">
+                <h3 >
+                  to order your <span >vegetable</span> basket, simply follow these
+                  <span>easy steps</span>
+                </h3>
+                <p >
+                  Our baskets are assembled with care and delivered straight to your
+                  doorstep, so you can enjoy the taste of fresh fruit without ever
+                  leaving your home.
+                </p>
+                </div>
+    
+                <div class="how-it-bottom">
+                <ol >
+                  <li >
+                    <span class="span1">1</span>
+                    <p >
+                      Just choose <span class="span2"> the vegetable</span> you want to order by
+                      clicking on the checkboxes<span class="span2"> next to it.</span>
+                    </p>
+                  </li>
+                  <li >
+                    <span class="span1">2</span>
+                    <p >Click on <span class="span2">the basket</span> and fill out the form.</p>
+                  </li>
+                  <li >
+                    <span class="span1">3</span>
+                    <p>
+                      Sit back and relax! Your <span class="span2">fresh vegetables</span> basket
+                      will be delivered.
+                    </p>
+                  </li >
+                </ol>
+              </div>
+              </div>
+            
+            </section>
+
+      
 
       <section id="second-section">
         <!-- beyza -->
-        <h2 class="second-section-up">DISCOUNT UP TO 40%!</h2>
-        <h2 class="second-section-bottom">
-          TASTE THE VITAMINS AND KEEP YOUR HEALTH
-        </h2>
+         
+            <h2 class="second-section-up">DISCOUNT UP TO 40%!</h2>
+            <h2 class="second-section-bottom">
+              TASTE THE VITAMINS AND KEEP YOUR HEALTH
+            </h2>
+      
       </section>
 
       <section id="third-section">
@@ -210,6 +317,73 @@
 
       <section id="fifth-section">
         <!-- yeşim -->
+        <div class="fifth-section-title">
+          <h2>
+            Fresh <span>Harvest</span> Box
+            <br />
+            has got you covered
+          </h2>
+          <p>
+            Our boxes are packed with delicious, nutritious vegetables, perfect
+            for anyone looking to eat healthier or support local farmers. Order
+            your box today and start enjoying the best that nature has to offer!
+          </p>
+        </div>
+        <div class="fifth-section-div">
+          <div class="fifth-section-form-container">
+            <h2>
+              Ordering <span class="from-us">from us</span> is quick and easy!
+              Fill out <span class="the-form">the form</span> below and we will
+              contact you !
+            </h2>
+            <form class="form-box" action="#">
+              <input type="text" placeholder="Full Name" required />
+              <div class="inp-wrp">
+                <input
+                  class="inp"
+                  type="email"
+                  placeholder="Email"
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                  required
+                />
+                <p class="text-valid">Success!</p>
+                <p class="text-invalid">Invalid email, try again</p>
+              </div>
+              <textarea placeholder="Comment" required></textarea>
+              <button class="button-send" type="submit">SEND</button>
+            </form>
+          </div>
+          <div class="fifth-section-img-container">
+            <img
+              src="./images/fifth_section/smoothie.png"
+              srcset="
+                images/fifth_section/smoothie.png    1x,
+                images/fifth_section/smoothie@2x.png 2x,
+                images/fifth_section/smoothie@3x.png 3x
+              "
+              alt="smoothie"
+            />
+            <div class="fifth-section-social-media">
+              <p class="social-networks">Follow us on our social networks:</p>
+              <ul class="social-media">
+                <li>
+                  <a href="https://www.instagram.com/goit.turkiye/"
+                    >instagram</a
+                  >
+                </li>
+                <li>/</li>
+                <li><a href="https://m.youtube.com/@GoITTurkey">youtube</a></li>
+                <li>/</li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/"
+                    >facebook</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
