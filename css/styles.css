@@ -27,8 +27,7 @@ body {
 footer {
   background-color: #7A3145;
   color: #fff;
-  padding: 20px 100px;
-  /* Add 100px padding on left and right */
+  padding: 20px 0;
   font-size: 14px;
 }
 
@@ -60,6 +59,8 @@ footer {
   /* Required for webkit-line-clamp */
   text-overflow: ellipsis;
   /* Add ellipsis for overflow text */
+  padding-left: 100px;
+  /* Add 100px left padding */
 }
 
 .footer-section ul {
@@ -88,23 +89,22 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 42px;
-  /* Adjust spacing from the bottom */
+  margin-top: 20px;
   font-size: 14px;
+  padding: 42px 100px 0;
+  /* Adjusted for spacing */
 }
 
 .footer-bottom-left {
-  width: 565px;
-  height: 20px;
   text-align: left;
   color: #D4BFC4;
+  width: 565px;
 }
 
 .footer-bottom-right {
-  width: 565px;
-  height: 20px;
   text-align: right;
   color: #D4BFC4;
+  width: 565px;
 }
 
 .footer-bottom a {
@@ -121,7 +121,22 @@ footer {
 /* Tablet (768px and up) */
 @media (min-width: 768px) {
   .footer-content {
-    justify-content: space-around;
+    justify-content: space-evenly;
+  }
+
+  .footer-section p {
+    padding-left: 0;
+    /* Reset padding for this breakpoint */
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  .footer-section ul {
+    margin-left: 50px;
+  }
+
+  .footer-bottom {
+    padding: 20px 50px 0;
   }
 }
 
@@ -133,5 +148,14 @@ footer {
 
   .footer-content {
     gap: 40px;
+  }
+
+  .footer-section {
+    margin-right: 50px;
+  }
+
+  .footer-bottom {
+    padding: 42px 100px 0;
+    /* Restore spacing */
   }
 }
