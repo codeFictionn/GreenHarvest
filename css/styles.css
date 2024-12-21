@@ -131,6 +131,17 @@ header {
     background: none;
 }
 
+#navbar-right-list-li:hover{
+  background-color: #D4BFC4;
+}
+
+#navbar-right-list-li:active{
+  background-color: #FBFBFB;
+  color: #7A3145;
+}
+
+
+
 #navbar-right-button {
     
     display: flex;
@@ -138,11 +149,11 @@ header {
     padding: 16px 32px 16px 32px;
     gap: 10px;
     background-color: #7a3145;
+    color: #FBFBFB; /* Yazı rengi */
 }
 
 #navbar-right-button button {
     all: unset; /* Tüm varsayılan tarayıcı stillerini sıfırlar */
-    color: #FBFBFB; /* Yazı rengi */
     font-family: "Inter Tight", sans-serif; /* Yazı tipi */
     font-size: 18px; /* Yazı boyutu */
     font-weight: 600; /* Yazı kalınlığı */
@@ -157,6 +168,12 @@ header {
     background-color: #FBFBFB;
     color: #7A3145;
 }
+
+#navbar-right-button:hover{
+  background-color: #D4BFC4;
+  color: #7A3145;
+}
+
 
 
 .overlay-container{
@@ -1106,11 +1123,6 @@ width: 100%;
         width: 90%;
     }
 
-    #navbar-right-button:hover{
-        background-color: #D4BFC4;
-        color: #7A3145;
-    }
-   
     
     #navbar-right {
         display: flex;
