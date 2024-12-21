@@ -277,7 +277,7 @@ header {
 .hero-section-img{
     width: 100%;
     height: 372px;
-    background-image: url(/images/hero_section/heroimage@3x.png);
+    background-image: url(../images/hero_section/heroimage@3x.png);
     background-size: cover; /* Resmi kapsayıcı alana göre ölçeklendirir */
     background-position: center; /* Resmi dikey ve yatay ortalar */
     background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
@@ -467,6 +467,7 @@ width: 100%;
   display: flex; /* Flexbox aktif edilir */
   flex-wrap: wrap;
   gap: 20px; /* Elemanlar arası boşluk */
+  max-width: 1280px;
 }
 
 .vegetables-name {
@@ -854,7 +855,7 @@ width: 100%;
 
     .hero-section-img{
         height: 536px;
-        background-image: url(/images/hero_section/heroimage@2x.png);
+        background-image: url(../images/hero_section/heroimage@2x.png);
         
     }
 
@@ -1133,7 +1134,7 @@ width: 100%;
     }
     .hero-section-img{
         
-        background-image: url(/images/hero_section/heroimage@1x.png);
+        background-image: url(../images/hero_section/heroimage@1x.png);
         
     }
     .hero-section-text {
