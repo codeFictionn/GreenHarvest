@@ -318,7 +318,7 @@ p {
 }
 /* BEYZA */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   /*Feyza*/
   #first-section {
     height: 1548px;
