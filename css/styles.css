@@ -78,7 +78,6 @@ header {
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    padding-right: 100px;
 }
 
 .navbar-right-list-ul {
@@ -160,7 +159,7 @@ header {
 }
 
 #hero {
-    width: 640px;
+    width: 50%;
     height: 796px;
 }
 
@@ -190,7 +189,7 @@ header {
 }
 
 .hero-images {
-    width: 640px;
+    width: 50%;
     height: 796px;
     margin-right: 0px;
     background-repeat: no-repeat;
@@ -201,66 +200,139 @@ header {
 
 /*mobile*/
 @media (max-width: 767px) {
-    header {
-        width: 375;
-        height: 100px;
-    }
-    #navbar {
-        width: 335px;
-        height: 32px;
-        margin-left: 0px;
-        padding-left: 0px;
-    }
-
     #section-hero {
-        width: 275x;
-        height: 740px;
+        width: 100%;
+        height: 840px;
         display: flex;
         flex-direction: column;
+        padding-left: 0;
     }
-        
+    #navbar {
+        width: 100%;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-logo-mobile {
+        cursor: pointer;
+        width: 168px;
+        height: 16px;
+        padding-right: 20px;
+    }
+
+    .navbar-right-list-ul {
+        display: none;
+    }
+    
+    .navbar-right-button {
+        display: none;
+    }
+
+    .tablet-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        width: 32px;
+        height: 32px;
+        padding-right: 20px;
+    }
+
+    #hero {
+        padding: 0;
+        width: 100%;
+    }
+
     .hero-text {
-        width: 335px;
-        height: 328px;
+        width: 100%;
+        height: 208px;
+        padding-top: 0;
+        padding-left: 20px;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        margin-left: 20px;
-        margin-top: 100px;
     }
 
     .hero-title-main {
         font-size: 52px;
         font-weight: 600;
         line-height: 52px;
-        text-transform: uppercase;
-        color: #fbfbfb;
+        letter-spacing: -1.5;
     }
 
     .hero-images {
-        width: 375px;
+        width: 100%;
         height: 372px;
-        margin-right: 0px;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url(../images/header/mobile-hero-background.jpg);
-}
-}
+        background-image: url(../images/header/mobile-background.png);
+    } 
+}   
 
 /*tablet*/
 @media (min-width: 768px) and (max-width: 1279px) {
-    #section-hero {
-        display: flex;
-        flex-direction: column;
-    }
+        #section-hero {
+            width: 100%;
+            height: 1020px;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
 
-    .hero-text {
-        width: 704px;
-        height: 312px;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
+        #navbar {
+            width: 100%;
+            padding-left: 32px;
+        }
+
+        .navbar-right-list-ul {
+            display: none;
+        }
+
+        .navbar-right-button {
+            display: none;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+        .nav-logo-mobile {
+            display: none;
+        }
+
+        .tablet-menu {
+            width: 40px;
+            height: 40px;
+            margin-right: 32px;
+        }
+
+
+        #hero {
+            padding: 0;
+            width: 100%;
+        }
+
+        .hero-text {
+            width: 704px;
+            height: 321px;
+            padding-top: 0;
+            padding-left: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .hero-images {
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(../images/header/tablet-background.png);
+        }
 }
 
 /*desktop*/
@@ -268,6 +340,17 @@ header {
     #section-hero {
         display: flex;
         flex-direction: row;
+   }
+   .tablet-menu {
+    display: none;
+   }
+
+   .mobile-menu {
+       display: none;
+   }
+
+   .nav-logo-mobile {
+       display: none;
    }
 }
 
