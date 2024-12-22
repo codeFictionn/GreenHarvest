@@ -1170,6 +1170,11 @@ width: 100%;
         background-color: #D4BFC4;
         color: #7A3145;
     }
+
+    #navbar-right-button:active{
+      background-color: #FBFBFB;
+      color: #7A3145;
+    }
    
     
     #navbar-right {
@@ -1179,12 +1184,15 @@ width: 100%;
     .nav-logo-right{
         display: none;
     }
-    
+    .overlay-container{
+      display: none;
+    }
 
     .overlay-button-under:active{
         background-color: #D4BFC4;
         color: #7A3145;
     }
+
     #hero-section{
         flex-direction: row;
         gap: 0px;
